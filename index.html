@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bachelor Thesis</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/benchmark/2.1.4/benchmark.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+  </head>
+  <body>
+    <h1>
+      Bachelor Thesis - Analyzing the performance of WebAssembly executed in the
+      browser
+    </h1>
+    <h2>Paul Lotz</h2>
+
+    <hr />
+    <ol>
+      <li>Choose what algorithm to run</li>
+      <li>Click 'Run test' button</li>
+      <li>Open browser console</li>
+      <li>Wait for tests to finish</li>
+    </ol>
+    <div>
+      <label for="algorithms">Choose a algorithm:</label>
+      <select name="algorithms" id="algorithms">
+        <option value="qs">Quicksort</option>
+        <option value="mm">Matrix multiplication</option>
+        <option value="gs">Gray scale</option>
+        <option value="sha">SHA</option>
+      </select>
+
+      <button id="runAlgorithmTestBtn">Run test</button>
+    </div>
+  </body>
+</html>
